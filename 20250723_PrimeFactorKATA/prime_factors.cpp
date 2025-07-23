@@ -5,16 +5,15 @@ class PrimeFactors {
 public:
 	vector<int> of(int number) {
 		vector<int> result;	
-		if (number == 4 || number == 6 || number == 9 || number == 12) {
-			for (int divisor = 2; number > 1; divisor++)
-			{
-				while (number % divisor == 0) {
-					result.push_back(divisor);
-					number /= divisor;
-				}
+
+		for (int divisor = 2; number > 1; divisor++)
+		{
+			while (number % divisor == 0) {
+				result.push_back(divisor);
+				number /= divisor;
 			}
 		}
-		else if (number > 1) result.push_back(number);
+		
 		return result;
 	}
 };
