@@ -6,4 +6,3 @@ public:
 	vector<int> of(int i) {
 		return {};
 	}
-};
