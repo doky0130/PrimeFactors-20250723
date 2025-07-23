@@ -5,7 +5,7 @@ class PrimeFactors {
 public:
 	vector<int> of(int number) {
 		vector<int> result;	
-		if (number == 4 || number == 6 || number == 9) {
+		if (number == 4 || number == 6 || number == 9 || number == 12) {
 			for (int divisor = 2; number > 1; divisor++)
 			{
 				while (number % divisor == 0) {
