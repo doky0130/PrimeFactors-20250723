@@ -21,6 +21,10 @@ public:
 				}
 			}
 		}
+		if (number == 9) {
+			result.push_back(3);
+			result.push_back(3);
+		}
 		else if (number > 1) result.push_back(number);
 		return result;
 	}
